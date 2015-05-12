@@ -1,0 +1,17 @@
+[core]
+addr = ":26590"
+
+[buildpack]
+url = "https://github.com/heroku/heroku-buildpack-nodejs.git"
+
+[app]
+repo = "hjr265/hopper-hello.js"
+
+	[app.env]
+	GREETING = "Hello"
+
+	[app.procs]
+	web = 1
+
+[hook]
+secret = ""
